@@ -1,0 +1,398 @@
+body {
+    background-image: url("https://cdn.usarestaurants.info/assets/uploads/79312690b97a42a112f799bad39d8bb8_-united-states-connecticut-fairfield-county-bridgeport-672671-mcdonaldshtm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 220vmin;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-image 1s ease-in-out;
+}
+.nav {
+    margin-top: 0.5pc;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 1.5pc;
+    padding: 10px;
+}
+.navigation a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.navigation a:last-child {
+    margin-right: 0;
+}
+.name {
+    margin-top: 15px;
+    color: white;
+    font-size: 28px;
+}
+.sec {
+    margin-top: 18px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.icons {
+    position: relative;
+}
+.sup, .psup {
+    /* position: absolute; */
+    background-color: #ff6600;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 9px;
+}
+.psup {
+    top: -10px;
+    right: -10px;
+    font-size: 13px;
+}
+.hero {
+    margin-left: 10vmin;
+    margin-top: 23vmin;
+    color: rgb(255, 255, 255);
+}
+.hero h1 {
+    font-size: 10vmin;
+}
+.btn1 {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    height: 6vmin;
+    width: 18vmin;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 2vmin;
+    cursor: pointer;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+.btn1:hover {
+    background-color: #ffffff;
+    color: #ff6600;
+}
+.btn2 {
+    margin-left: 2pc;
+    border-radius: 10%;
+    padding: 15px 32px;
+    background-color: transparent;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+}
+.btn2:hover {
+    color: #ffffff;
+    background-color: #ff6600;
+}
+/* Slider navigation buttons */
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}.h1sec{
+    font-size: 40px;
+    margin-top: 40vmin;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.secdiv {
+    margin-top: 10vmin;
+justify-content: center;
+display: flex;
+gap: 30vmin;
+}
+
+.sec1, .sec2, .sec3 {
+justify-content: center;
+border: 1px solid #ff6600;
+width: 40vmin;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 42vmin;
+padding: 1vmin;
+text-align: center;
+}
+
+.sec3 {
+width: 44vmin; /* Slightly wider */
+}
+
+.sec1 i, .sec2 i, .sec3 i {
+color: #ff6600;
+margin-top: 2vmin;
+font-size: 7vmin;
+}
+
+.sec1 p, .sec2 p, .sec3 p {
+margin-left: 10px;
+text-align: left;
+margin-top: 2vmin;
+font-size: 2vmin;
+}
+
+.prh1{
+    font-size: 40px;
+    margin-top: 20vmin;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.product-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Four cards per row */
+    gap: 20px;
+    padding: 20px;
+    row-gap: 10vmin;
+    column-gap: 10vmin;
+    margin-top: 10vmin;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Darker shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); /* Deeper shadow on hover */
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #f09558;
+}
+
+.loch1{
+    font-size: 6vmin;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15vmin;
+}
+
+
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    background-color: #f2f2f2; /* Adjust background color if needed */
+}
+
+.about-us .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    
+
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-us .container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        text-align: center;
+        padding: 0;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#get-in-touch {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #f79f64;
+}
+
+a:hover, a:focus {
+    color: #ff6600 !important;
+}
+#error-error{
+    color: red;
+    font-size: 0.875em;
+    display: block;
+    margin-top: 5px;
+}
+
+
+   /* Styles for the confirmation message */
+   .confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
